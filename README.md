@@ -1,6 +1,8 @@
 wildfire cause prediction model made for the chabot space and science center enviro team
 
-model.py contains all of the code, pretty messy, includes 1. data preprocessing 2. model training 3. prediction solving all in one file, should have seperated but that was too much work
+model.py contains all of the model code, data pre/post processing is pretty self-explanatory
+
+to run it yourself, download FER dataset, run data pre, run model, run data post, upload data to ARCgis to plot and generalize results
 
 model ended with around 70% accuracy using random forest, increased from around 40% using neural network and too many classifers.
 
