@@ -27,7 +27,6 @@ df['DAY_OF_WEEK'] = df['DATE'].dt.day_name()
 df_orig = df.copy() #I will use this copy later
 #print(df.head())
 
-"""
 df_arson = df[df['STAT_CAUSE_DESCR']=='Arson']
 df_arson['DAY_OF_WEEK'].value_counts().plot(kind='barh',color='coral')
 plt.show()
@@ -47,7 +46,7 @@ plt.show()
 
 df.plot(kind='scatter',x='LONGITUDE',y='LATITUDE',color='coral',alpha=0.3)
 plt.show()
-"""
+
 le = preprocessing.LabelEncoder()
 df['STAT_CAUSE_DESCR'] = le.fit_transform(df['STAT_CAUSE_DESCR'])
 df['STATE'] = le.fit_transform(df['STATE'])
